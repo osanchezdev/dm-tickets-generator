@@ -1,5 +1,10 @@
 import React from 'react'
- q qite">"Generador aleatorio de tickets para DM-Drupal"</h1>
+
+
+const Title = () => {
+  return (
+    <header className="my-5 w-100">
+      <h1 className="mb-5 text-white">"Generador aleatorio de tickets para Drupal"</h1>
     </header>
   )
 }
