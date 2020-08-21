@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+import TicketsProvider from './context/ticketsContext';
+
+// Styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TicketsProvider>
+      <App />
+    </TicketsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
